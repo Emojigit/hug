@@ -9,7 +9,7 @@ __dname__ = "hug"
 from telethon import events, utils
 import config, sys, os.path
 hug = "🤗"
-hug_requested = ["抱抱","貼貼","贴贴"]
+hug_requested = ["抱抱","貼貼","贴贴","摸摸"]
 def setup(bot,storage):
     @bot.on(events.NewMessage())
     async def hug_check(event):
