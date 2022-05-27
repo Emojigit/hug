@@ -16,5 +16,5 @@ def setup(bot,storage):
         text = event.text
         for x in hug_requested:
             if x in text:
-                await event.reply(hug)
+                await bot.send_message(event.chat,hug,reply_to=(await event.get_reply_message()) or event.message)
                 break
